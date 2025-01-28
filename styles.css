@@ -1,0 +1,371 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header .logo img {
+    width: 40px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons .signup {
+    margin-right: 1rem;
+    color: #007bff;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-buttons .login-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #00c4cc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.auth-buttons .login-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.auth-buttons .login-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background: #f4f4f4;
+    padding: 2rem 1rem; /* Reduced vertical padding and increased horizontal padding */
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: #007bff;
+    margin-bottom: 0.5rem; /* Reduced margin for tighter spacing */
+}
+
+.hero-content h2 {
+    font-size: 2rem; /* Reduced font size for a smaller height */
+    margin-bottom: 1rem; /* Reduced margin for tighter spacing */
+}
+
+.hero-content h2 span {
+    color: #00c4cc;
+}
+
+.hero-content p {
+    margin-bottom: 2rem; /* Reduced margin for tighter spacing */
+    color: #666;
+}
+
+.hero-buttons .btn {
+    display: inline-block;
+    padding: 0.7rem 1.4rem; /* Adjusted padding for smaller buttons */
+    margin: 0.4rem; /* Reduced margin for tighter spacing */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-buttons .btn.primary {
+    background: #007bff;
+    color: #fff;
+}
+
+.hero-buttons .btn.secondary {
+    background: #00c4cc;
+    color: #fff;
+}
+
+.hero-slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Increased max-width for a wider slider */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 400px; /* Set a fixed height for the slider */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%; /* Ensure images fill the slider's height */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    flex-shrink: 0;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}   
+
+/* Form Section */
+.form-section {
+    background: #00c4cc;
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-section form {
+    flex: 0 0 400px; /* Fixed width for the form section */
+    margin-right: 1rem;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.form-group input {
+    flex: 1;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+button.btn.primary {
+    margin-top: 1rem; /* Add spacing above the button */
+    padding: 0.7rem 1.5rem;
+    background: #fff;
+    color: #00c4cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.btn.primary:hover {
+    background: #e0f7f9; /* Subtle hover effect */
+}
+
+.opening-hours {
+    flex: 1; /* Flexible width for the opening hours */
+    text-align: right; /* Align text to the right */
+}
+
+.opening-hours h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.opening-hours p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-section form {
+        margin-right: 0;
+        margin-bottom: 2rem;
+        flex: 0 0 auto; /* Remove fixed width on small screens */
+    }
+
+    .opening-hours {
+        text-align: center;
+    }
+}
+
+footer {
+    font-size: 0.875rem; /* Decreased font size (14px) */
+    text-align: center; /* Ensure text remains centered */
+    padding: 1rem 0; /* Optional: Adjust padding if needed */
+    background: #f4f4f4; /* Optional: Add a background color for better visibility */
+    color: #666; /* Optional: Adjust text color */
+}
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu Items */
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 180px; /* Slightly wider for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    list-style: none;
+    padding: 0;
+    margin-top: 8px; /* Adds spacing below the parent menu item */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Dropdown Menu Items */
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px; /* Adjusted for compact look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    list-style: none;
+    padding: 0;
+    margin-top: 6px; /* Slightly reduced spacing */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    padding: 10px 14px; /* Reduced padding */
+    text-decoration: none;
+    display: block;
+    font-size: 0.875rem; /* Reduced font size */
+    transition: background 0.3s ease;
+}
+
+/* Hover Effect */
+.dropdown-menu li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Dropdown Arrow */
+.dropdown > a::after {
+    content: " ▼";
+    font-size: 0.75rem; /* Smaller arrow */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

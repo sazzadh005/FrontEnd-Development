@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Clinic</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="tooltip" data-tooltip="Home">
+                    <img src="home.png" alt="Home Icon">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="tooltip" data-tooltip="Home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">General Checkup</a></li>
+                            <li><a href="#">Dental Care</a></li>
+                            <li><a href="#">Eye Specialist</a></li>
+                        </ul>
+                    </li>                                     
+                    <li><a href="#about" class="tooltip" data-tooltip="About Us">About Us</a></li>
+                    <li><a href="#appointment" class="tooltip" data-tooltip="Appointment">Appointment</a></li>
+                    <li><a href="contact.html" class="tooltip" data-tooltip="Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#signup" class="signup tooltip" data-tooltip="Sign Up">Sign Up</a>
+                <a href="#login" class="login-icon tooltip" data-tooltip="Login">
+                    <img src="user-icon.png" alt="Login Icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome</h1>
+                <h2>Medical Clinic that <span>You can Trust.</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <div class="hero-buttons">
+                    <a href="#book" class="btn primary">Book Now</a>
+                    <a href="#info" class="btn secondary">More Info</a>
+                </div>
+            </div>
+            <div class="hero-slider">
+                <div class="slider">
+                    <img src="doc&patient.jpg" alt="Doctor with Patient">
+                    <img src="clinic int.jpg" alt="Clinic Interior">
+                    <img src="clinic int1.gif" alt="Clinic Interior">
+                    <img src="clinic int2.png" alt="Clinic Interior">
+                    <img src="equip.jpg" alt="Medical Equipment">
+                    <img src="equip1.jpg" alt="Medical Equipment">
+                    <img src="equip2.avif" alt="Medical Equipment">
+                </div>
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" name="first_name" placeholder="Your first name*" required>
+                    <input type="text" name="last_name" placeholder="Your last name">
+                    <input type="number" name="age" placeholder="Patients Age*" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="disease" placeholder="Describe disease*" required>
+                    <input type="number" name="contact" placeholder="Your contact*" required>
+                    <input type="email" name="email" placeholder="Your email address">
+                </div>
+                <button type="button" class="btn primary" id="submitButton">Submit</button>
+            </form>
+            <div class="opening-hours">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 8:00 - 17:00</p>
+                <p>Saturday - Sunday: 8:00 - 15:00</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Medical Clinic. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
